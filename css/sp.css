@@ -1,0 +1,221 @@
+@charset "UTF-8";
+@media (max-width:767px)
+{
+.pc{
+	display: none;
+}
+.sp{
+	display: block;
+}
+img{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+#logo{
+	width: 25%;
+	margin: 10px 0 0 10px;
+}
+#gNavi ul{
+    display: flex;
+}
+#headerInner_sp{
+	position: relative;
+	width: 100%;
+	height: 10vh;
+	background-color: #ff9700;
+}
+#headerInner_sp h1{
+	position: absolute;
+	top: 30%;
+	left: 3%;
+	color: #fff;
+	font-size: 1.8rem;
+}
+/* ハンバーガーメニュー*/
+#menu{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	z-index: 10000;
+}
+#menu span{
+	position: absolute;
+	display: block;
+	background-color: #fff;
+	width: 42px;
+	height: 3px;
+	right: 5%;
+	transition:0.5s;
+}
+/* #menu span:nth-child(1){
+	top:28px;
+}
+#menu span:nth-child(2){
+	top:38px;
+}
+#menu span:nth-child(3){
+	top:48px;
+} */
+
+#menu span:nth-child(1){
+	top:37%;
+}
+#menu span:nth-child(2){
+	top:49%;
+}
+#menu span:nth-child(3){
+	top:61%;
+}
+
+/* toggleClass */
+.open #menu span:nth-child(1){
+	transform: rotate(45deg);
+	top:50%;
+}
+
+.open #menu span:nth-child(2){
+	opacity: 0;
+}
+
+.open #menu span:nth-child(3){
+	transform: rotate(-45deg);
+	top:50%;
+}
+/* メニューが上から降りてくる設定 */
+#menu-list{
+	width: 100%;
+	height: 100vh;
+	background-color: #ff9700;
+	position: fixed;
+	top: 0;
+	left: 0;
+	transform: translateY(100vh);
+	transition: 0.5s;
+	z-index: 1000;
+}
+.open #menu-list{
+	transform: translateY(0);
+}
+#menu-list ul{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	font-size: 30px;
+}
+#menu-list ul li{
+	margin-bottom: 20px;
+}
+.gfont{
+    font-family: "Cal Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+	letter-spacing: 1.5px;
+  }
+#topPhoto_sp{
+	background-image: url(../images/cafe_top.jpg);
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: cover;
+	height: 40vh;
+}
+
+/* about */
+#about{
+    width: 130px;
+	margin: 40px auto 20px auto;
+}
+#about_img{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
+#about_h2{
+	width: 360px;
+    margin: 30px auto 15px auto;
+}
+.about_p{
+	width: 304px;
+    margin-top: 1.5em;
+    margin: 5px auto;
+}
+
+/* drink */
+#drinkmenu{
+    width: 221px;
+	margin: 60px auto 20px auto;
+}
+#drink_img{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
+#drink_h2{
+    width: 312px;
+    margin: 30px auto 15px auto;
+}
+.drink_p{
+    width: 304px;
+    margin-top: 1.5em;
+    margin: 5px auto;
+}
+
+
+/* food */
+#foodmenu{
+    width: 216px;
+	margin: 60px auto 20px auto;    
+}
+#food_img{
+	width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
+#food_h2{
+    width: 384px;
+    margin: 30px auto 15px auto;
+}
+.food_p{
+    width: 320px;
+    margin-top: 1.5em;
+    margin: 5px auto;
+}
+
+
+/* access */
+#map_sp{
+	width: 340px;
+	height: auto;
+    margin: 0 auto;
+}
+#access_sp{
+    width: 130px;
+	margin: 60px auto 20px auto;  
+}
+.add{
+    width: 230px;
+    margin-top: 1.5em;
+    margin: 5px auto;
+}
+.add:nth-child(1){
+    margin-top: 30px;
+}
+.add:nth-child(3){
+    margin-bottom: 50px;
+}
+
+/* フッター */
+footer {
+    background-color: #ff9700;
+    color: #fff;
+    text-align: center;
+	vertical-align: bottom;
+    padding: 30px;
+}
+
+}

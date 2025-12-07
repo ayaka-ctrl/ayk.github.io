@@ -1,0 +1,171 @@
+@charset "UTF-8";
+@media (min-width: 768px)
+{
+.sp{
+    display: none;
+}
+.pc{
+    display: block;
+}
+#headerInner_pc{
+    display: flex;
+    justify-content: space-between;
+    width: 92%;
+    margin: 20px auto;
+}
+#logo{
+    width: 25%;
+    margin-top: -5px;
+}
+#gNavi ul{
+    display: flex;
+    justify-content: space-between;
+    margin: 70px auto;
+}
+#gNavi ul li{
+    padding-left: 20px;
+}
+/* フォント */
+.gfont{
+    font-family: "Cal Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    letter-spacing: 1.5px;
+}
+.gfont:hover{
+	transform: translateY(-8px) scale(1.1);
+}
+
+
+/* メイン画像 */
+#topPhoto_pc{
+    background-image:url(../images/cafe_top.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    height: 675px;
+    box-sizing: border-box;
+    margin-top: -59px;
+    padding-top: 244px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 0 10px #000;
+    font-size: 4em;
+    line-height: 70%;
+}
+#topPhoto_pc span{
+    font-size: 0.8em;
+}
+h1,span {
+    animation: anim1 2s linear 0s normal;
+}
+@keyframes anim1{
+	0%{opacity: 0;}
+	100%{opacity: 1;}	
+}
+
+
+/* スクロールアニメ */
+.fadein {
+    opacity: 0;
+    transform: translate(0, 50%);
+    transition: 2s;
+  }
+  .fadein.is-show {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+
+
+.wrapper{
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    height: auto;
+    margin: 10px auto;
+}
+
+/* about */
+#about{
+    width: 130px;
+	margin: 80px auto 40px auto;
+}
+#about_img{
+    width: 50%;
+    height: auto;
+    margin-left: 32px;
+}
+#about_h2{
+    margin: 110px 0 20px 50px;
+}
+.about_p{
+    margin-top: 0.7em;
+    margin-left: 65px;
+}
+
+
+/* drink */
+#drinkmenu{
+    width: 250px;
+	margin: 80px auto 40px auto;
+}
+#drink_img{
+    width: 50%;
+    height: auto;
+    margin-left: -13px;
+}
+#drink_h2{
+    margin: 100px 0 20px -36px;
+}
+.drink_p{
+    margin-top: 0.7em;
+    margin-left: -35px;
+}
+
+
+/* food */
+#foodmenu{
+    width: 250px;
+	margin: 80px auto 40px auto;    
+}
+#food_img{
+    width: 50%;
+    height: auto; 
+    margin-left: 7px;
+}
+#food_h2{
+    margin: 110px -50px 20px 0;
+}
+.food_p{
+    margin-top: 0.7em;
+    margin-left: -3px;
+}
+
+
+/* access */
+#map_pc{
+    margin-bottom: 100px;
+}
+#access_pc{
+    width: 130px;
+	margin: 80px auto 40px auto;  
+}
+.add{
+    margin-top: 0.7em;
+    margin-left: -3px;
+}
+.add:nth-child(1){
+    margin-top: 110px;
+}
+
+
+/* フッター */
+footer {
+    background-color: #ff9700;
+    color: #fff;
+    text-align: center;
+    padding: 60px;
+}
+
+}
